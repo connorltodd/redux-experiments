@@ -1,4 +1,4 @@
-import { INCREMENT, DECREMENT } from '../actions/counterConstants';
+import { INCREMENT, DECREMENT } from '../constants/counterConstants';
 
 const initialState = {
     counterValue: 0,
@@ -6,8 +6,6 @@ const initialState = {
 
 
 const CounterReducer = (state = initialState, action) => {
-    console.log("state", state)
-    console.log("action", action)
     switch (action.type) {
         case INCREMENT:
             return { counterValue: state.counterValue + 1 };

@@ -1,12 +1,10 @@
-import { ADD_TODO, DELETE_TODO } from "../actions/todosConstant";
+import { ADD_TODO, DELETE_TODO } from "../constants/todosConstants";
 
 const initialState = {
     todos: [],
 }
 
 const TodoReducer = (state = initialState, action) => {
-    console.log("state", state)
-    console.log("action", action)
     switch (action.type) {
         case ADD_TODO:
             return { ...state, todos: [...state.todos, action.payload] };

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Todo from './Todo';
 import { connect } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
-import { ADD_TODO, DELETE_TODO } from '../actions/todosConstant';
+import { ADD_TODO, DELETE_TODO } from '../constants/todosConstants';
 
 
 function TodoList(props) {

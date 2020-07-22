@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { INCREMENT, DECREMENT } from '../actions/counterConstants';
+import { INCREMENT, DECREMENT } from '../constants/counterConstants';
 
 function Counter(props) {
     return (
